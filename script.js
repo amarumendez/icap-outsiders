@@ -43,7 +43,7 @@ function createPostElement(post) {
   likeContainer.classList.add('like-container');
 
   const likeImg = document.createElement('img');
-  likeImg.src = "/img/empty-heart.png";
+  likeImg.src = "empty-heart.png";
   likeImg.alt = "Like button";
   likeImg.classList.add('like-button');
 
@@ -53,10 +53,10 @@ function createPostElement(post) {
 
   likeImg.addEventListener('click', () => {
     if (likeImg.src.includes("empty-heart.png")) {
-      likeImg.src = "/img/heart-filled.png";
+      likeImg.src = "heart-filled.png";
       likeCount.textContent = ++post.likes;
     } else {
-      likeImg.src = "/img/empty-heart.png";
+      likeImg.src = "empty-heart.png";
       likeCount.textContent = --post.likes;
     }
   });
@@ -79,7 +79,7 @@ function openOverlay(post) {
   overlay.style.display = 'flex';
 
   document.getElementById('overlay-img').src = post.post_url;
-  document.getElementById('overlay-like-img').src = post.likes > 0 ? "/img/heart-filled.png" : "/img/empty-heart.png";
+  document.getElementById('overlay-like-img').src = post.likes > 0 ? "heart-filled.png" : "empty-heart.png";
   document.getElementById('overlay-like-count').textContent = post.likes;
   document.getElementById('overlay-description').textContent = post.post_alt;
   document.getElementById('overlay-date').textContent = `Date: ${post.post_date || ""}`;
