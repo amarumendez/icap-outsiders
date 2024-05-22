@@ -1,0 +1,54 @@
+{
+  "profile": {
+    "username": "ponyboy_curtis",
+    "bio": "I am ponyboy!!!",
+    "pfp_url": "/img/pfp.jpg",
+    "posts": 6,
+    "followers": 343,
+    "following": 50
+  },
+  "posts": [
+    {
+      "post_id": "post_one",
+      "post_alt": "At the church, together",
+      "post_url": "/img/post_one.jpg",
+      "post_date": "3/14/2022",
+      "likes": 0
+    },
+    {
+      "post_id": "post_two",
+      "post_alt": "my friends",
+      "post_url": "/img/post_two.jpeg",
+      "post_date": "12/12/2020",
+      "likes": 0
+    },
+    {
+      "post_id": "post_three",
+      "post_alt": "Cherry Valence",
+      "post_url": "/img/post_three.jpg",
+      "post_date": "9/12/2019",
+      "likes": 0
+    },
+    {
+      "post_id": "post_four",
+      "post_alt": "vibez",
+      "post_url": "/img/post_four.jpg",
+      "post_date": "9/12/2019",
+      "likes": 0
+    },
+    {
+      "post_id": "post_five",
+      "post_alt": "We will miss you Johnnycake",
+      "post_url": "/img/post_five.jpg",
+      "post_date": "1/2/2021",
+      "likes": 0
+    },
+    {
+      "post_id": "post_six",
+      "post_alt": "The Rumble",
+      "post_url": "/img/post_six.jpg",
+      "post_date": "2/2/2023",
+      "likes": 0
+    }
+  ]
+}

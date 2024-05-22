@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Instagram Profile</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="user-info-container">
+      <div class="profile-picture-container">
+        <img src="/img/pfp.jpg" alt="profile picture">
+      </div>
+      <div class="user-details">
+        <div class="user-info">
+          <div class="username-container" id="username">@username</div>
+          <div class="bio" id="bio">This is the user bio</div>
+        </div>
+        <div class="stats">
+          <div class="posts-container"><div id="posts">Posts: </div></div>
+          <div class="followers-container"><div id="followers">Followers: </div></div>
+          <div class="following-container"><div id="following">Following: </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="options-container-buttons">
+      <button id="follow-btn">Follow</button> <button id="messages-btn">Message</button>
+    </div>
+
+    <main>
+      <!-- Posts will be dynamically added here -->
+    </main>
+
+    <!-- Image Overlay -->
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+        <span class="close-btn" id="close-btn">&times;</span>
+        <div class="overlay-img-container">
+          <img id="overlay-img" src="" alt="">
+        </div>
+        <div class="overlay-details">
+          <div class="overlay-stats">
+            <div class="like-container">
+              <img id="overlay-like-img" src="/img/empty-heart.png" alt="Like button">
+              <span id="overlay-like-count"></span>
+            </div>
+            <div id="overlay-description"></div>
+            <div id="overlay-date">Date: </div>
+          </div>
+          <div class="comments-section">
+            <h3>Comments</h3>
+            <div id="comments-list">No comments here...</div>
+            <div class="comment-tools">
+              <input type="text" id="comment-input" placeholder="Add a comment...">
+              <button id="submit-comment-btn">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Message Overlay -->
+    <div class="overlay" id="message-overlay">
+      <div class="message-header">
+        <h2 id="message-header-text">Messaging to: </h2>
+        <button id="close-message-overlay-btn">Close</button>
+      </div>
+      <div class="message-container" id="message-container">
+        <!-- Messages will be dynamically added here -->
+      </div>
+      <div class="message-input-container">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button id="submit-message-btn">+</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
